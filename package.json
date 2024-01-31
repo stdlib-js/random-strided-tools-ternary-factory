@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-strided-tools-ternary-factory",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create a factory function for filling strided arrays with pseudorandom values drawn from a ternary PRNG.",
   "license": "Apache-2.0",
   "author": {

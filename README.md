@@ -44,7 +44,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-tools-ternary-factory@esm/index.mjs';
+import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-tools-ternary-factory@v0.2.1-esm/index.mjs';
 ```
 
 #### ternaryFactory( prng )
@@ -481,7 +481,7 @@ import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triang
 import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to@esm/index.mjs';
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-tools-ternary-factory@esm/index.mjs';
+import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-tools-ternary-factory@v0.2.1-esm/index.mjs';
 
 // Create a PRNG factory function:
 var factory = ternaryFactory( triangular );

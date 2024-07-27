@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-strided-tools-ternary-factory",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Create a factory function for filling strided arrays with pseudorandom values drawn from a ternary PRNG.",
   "license": "Apache-2.0",
   "author": {
@@ -37,17 +37,17 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-function": "^0.2.1",
-    "@stdlib/assert-is-method-in": "^0.2.1",
-    "@stdlib/assert-is-plain-object": "^0.2.1",
+    "@stdlib/assert-is-function": "^0.2.2",
+    "@stdlib/assert-is-method-in": "^0.2.2",
+    "@stdlib/assert-is-plain-object": "^0.2.2",
     "@stdlib/strided-base-ternary": "^0.2.1",
-    "@stdlib/string-format": "^0.2.1",
-    "@stdlib/utils-constant-function": "^0.2.1",
-    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.2",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
-    "@stdlib/utils-define-nonenumerable-read-write-accessor": "^0.2.1",
-    "@stdlib/utils-noop": "^0.2.1",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
+    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/utils-constant-function": "^0.2.2",
+    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
+    "@stdlib/utils-define-nonenumerable-read-write-accessor": "^0.2.2",
+    "@stdlib/utils-noop": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-filled": "^0.2.1",

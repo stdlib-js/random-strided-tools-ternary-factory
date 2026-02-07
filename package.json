@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-strided-tools-ternary-factory",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Create a factory function for filling strided arrays with pseudorandom values drawn from a ternary PRNG.",
   "license": "Apache-2.0",
   "author": {
@@ -37,24 +37,24 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-function": "^0.2.2",
-    "@stdlib/assert-is-method-in": "^0.2.2",
-    "@stdlib/assert-is-plain-object": "^0.2.2",
-    "@stdlib/strided-base-ternary": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
-    "@stdlib/utils-constant-function": "^0.2.2",
-    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
-    "@stdlib/utils-define-nonenumerable-read-write-accessor": "^0.2.2",
-    "@stdlib/utils-noop": "^0.2.2",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+    "@stdlib/assert-is-function": "^0.2.3",
+    "@stdlib/assert-is-method-in": "^0.2.3",
+    "@stdlib/assert-is-plain-object": "^0.2.3",
+    "@stdlib/strided-base-ternary": "^0.2.3",
+    "@stdlib/string-format": "^0.2.3",
+    "@stdlib/utils-constant-function": "^0.2.3",
+    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.4",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3",
+    "@stdlib/utils-define-nonenumerable-read-write-accessor": "^0.2.3",
+    "@stdlib/utils-noop": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/array-filled": "^0.2.1",
+    "@stdlib/array-filled": "^0.3.0",
     "@stdlib/array-zero-to": "^0.2.2",
     "@stdlib/array-zeros": "^0.2.2",
-    "@stdlib/console-log-each": "^0.2.2",
-    "@stdlib/math-base-assert-is-nan": "^0.2.2",
+    "@stdlib/console-log-each": "^0.2.3",
+    "@stdlib/math-base-assert-is-nan": "^0.2.3",
     "@stdlib/math-base-special-pow": "^0.3.0",
     "@stdlib/random-base-hypergeometric": "^0.2.1",
     "@stdlib/random-base-triangular": "^0.2.1",

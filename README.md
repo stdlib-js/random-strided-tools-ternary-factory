@@ -37,32 +37,14 @@ limitations under the License.
 
 > Create a factory function for filling strided arrays with pseudorandom values drawn from a ternary PRNG.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-strided-tools-ternary-factory
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var ternaryFactory = require( '@stdlib/random-strided-tools-ternary-factory' );
+import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-tools-ternary-factory@deno/mod.js';
 ```
 
 #### ternaryFactory( prng )
@@ -70,7 +52,7 @@ var ternaryFactory = require( '@stdlib/random-strided-tools-ternary-factory' );
 Returns a factory function for filling strided arrays with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -87,7 +69,7 @@ The function has the following parameters:
 Returns a function for filling strided arrays with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -110,9 +92,9 @@ The function supports the following options:
 To use a custom PRNG as the underlying source of uniformly distributed pseudorandom numbers, set the `prng` option.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var minstd = require( '@stdlib/random-base-minstd' );
-var triangular = require( '@stdlib/random-base-triangular' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -131,8 +113,8 @@ random( out.length, [ 2.0 ], 0, [ 5.0 ], 0, [ 3.0 ], 0, out, 1 );
 To seed the underlying pseudorandom number generator, set the `seed` option.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var triangular = require( '@stdlib/random-base-triangular' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -155,8 +137,8 @@ random( out.length, [ 2.0 ], 0, [ 5.0 ], 0, [ 3.0 ], 0, out, 1 );
 Fills a strided array with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var triangular = require( '@stdlib/random-base-triangular' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -186,8 +168,8 @@ The function has the following parameters:
 The `N` and stride parameters determine which strided array elements are accessed at runtime. For example, to access every other value in `out`,
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var triangular = require( '@stdlib/random-base-triangular' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -205,8 +187,8 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var triangular = require( '@stdlib/random-base-triangular' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -238,8 +220,8 @@ Fills a strided array with pseudorandom values drawn from a ternary PRNG using a
 <!-- eslint-disable max-len -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var triangular = require( '@stdlib/random-base-triangular' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -264,7 +246,7 @@ The function has the following additional parameters:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to access every other value in `out` starting from the second value,
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -284,7 +266,7 @@ random.ndarray( 3, [ 2.0 ], 0, 0, [ 5.0 ], 0, 0, [ 3.0 ], 0, 0, out, 2, 1 );
 The underlying pseudorandom number generator.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -301,7 +283,7 @@ var prng = random.PRNG;
 The value used to seed the underlying pseudorandom number generator.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -316,8 +298,8 @@ var seed = random.seed;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var triangular = require( '@stdlib/random-base-triangular' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -336,7 +318,7 @@ var seed = random.seed;
 Length of underlying pseudorandom number generator seed.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -351,8 +333,8 @@ var len = random.seedLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var triangular = require( '@stdlib/random-base-triangular' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -371,7 +353,7 @@ var len = random.seedLength;
 Writable property for getting and setting the underlying pseudorandom number generator state.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -386,8 +368,8 @@ var state = random.state;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var triangular = require( '@stdlib/random-base-triangular' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -406,7 +388,7 @@ var state = random.state;
 Length of underlying pseudorandom number generator state.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -421,8 +403,8 @@ var len = random.stateLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var triangular = require( '@stdlib/random-base-triangular' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -441,7 +423,7 @@ var len = random.stateLength;
 Size (in bytes) of underlying pseudorandom number generator state.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -456,8 +438,8 @@ var sz = random.byteLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var triangular = require( '@stdlib/random-base-triangular' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var factory = ternaryFactory( triangular );
 // returns <Function>
@@ -490,11 +472,11 @@ var sz = random.byteLength;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
-var zeros = require( '@stdlib/array-zeros' );
-var zeroTo = require( '@stdlib/array-zero-to' );
-var logEach = require( '@stdlib/console-log-each' );
-var ternaryFactory = require( '@stdlib/random-strided-tools-ternary-factory' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@deno/mod.js';
+import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zero-to@deno/mod.js';
+import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
+import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-tools-ternary-factory@deno/mod.js';
 
 // Create a PRNG factory function:
 var factory = ternaryFactory( triangular );
@@ -553,7 +535,7 @@ logEach( 'x1[%d] = %.2f; x2[%d] = %.2f', idx, x1, idx, x2 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
